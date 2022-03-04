@@ -1,0 +1,200 @@
+/*-----------*/
+/* Etiquetas */
+/*-----------*/
+
+/*------*/
+/* Menu */
+/*------*/
+.in{
+    padding: 2px;
+    border-radius: 40%;
+    border: ridge;
+    border-color: white;
+}
+
+/*--------*/
+/* Clases */
+/*--------*/
+.titulo {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 0px;
+}
+.coments .coments-custom{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+.coments .coments-custom p{
+  width: 95%;
+  padding: 0px 10px;
+}
+.coments{
+  width: 100%;
+}
+
+/*----------*/
+/* training */
+/*----------*/
+.training {
+  width: 75%;
+  margin-left: 12.5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+.training img {
+  width: 100%;
+  border: ridge;
+  border-color: rgb(59, 21, 21);
+}
+.training p {
+  margin: 25px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.img2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.img2 img {
+  height: 100%;
+}
+.r h2,
+.r h3 {
+  text-align: right;
+}
+.coment{
+    margin: 5px 0px;
+    padding: 10px 0px;
+    border: ridge;
+    border-color: rgb(59, 21, 21);
+    background-color: black;
+}
+.training-media-1k{
+  display: none;
+}
+.coments-media-1k{
+  display: none;
+}
+
+
+/*-----*/
+/* set */
+/*-----*/
+.set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.set img {
+  margin: 25px 0px;
+  border: ridge;
+  border-color: rgb(59, 21, 21);
+}
+
+/*-------------------*/
+/* Media html Folder */
+/*-------------------*/
+@media (max-width: 1000px) {
+  .training-custom-media{
+    display: none;
+  }
+  .training-media-1k{
+    display: block;
+  }
+  .training{
+    grid-template-columns: 1fr;
+    margin: 0px;
+    width: 100%;
+  }
+  .set img{
+    width: 100%;
+  }
+  .training .r h2,
+  .training .r h3{
+    text-align: left;
+  }
+}
+
+/*-------------------------*/
+/* Media html Alimentacion */
+/*-------------------------*/
+@media (max-width: 1000px){
+  .coments-media-1k{
+    text-align: center;
+    display: block;
+    margin: 5px 0px;
+    padding: 10px 0px;
+    border: ridge;
+    border-color: rgb(59, 21, 21);
+    background-color: black;
+  }
+  .coments .coments-custom{
+    display: none;
+  }
+  .prote, .carbo, .grasa{
+    border: ridge;
+    border-color: rgb(59, 21, 21);
+  }
+
+  /*-----------*/
+  /* Proteinas */
+  /*-----------*/
+  .training-media-1k .training .prote{
+    background: url(../img/Ejercicios/Alimentos/Proteinas.jpg) no-repeat center center/cover;
+  }
+  .training-media-1k .training .prote .coment{
+    border: none;
+    background: none;
+  }
+  .training-media-1k .training .prote h2{
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 1em black;
+  }
+  .training-media-1k .training .prote .coment p{
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 1em black;
+  }
+
+  /*---------------*/
+  /* Carbohidratos */
+  /*---------------*/  
+  .training-media-1k .training .carbo{
+    background: url(../img/Ejercicios/Alimentos/Carbohidratos.jpg) no-repeat center center/cover;
+  }
+  .training-media-1k .training .carbo .coment{
+    border: none;
+    background: none;
+  }
+  .training-media-1k .training .carbo h2{
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 1em black;
+  }
+  .training-media-1k .training .carbo .coment p{
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 1em black;
+  }
+
+  /*--------*/
+  /* Grasas */
+  /*--------*/
+  .training-media-1k .training .grasa h2{
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 1em black;
+  }
+  .training-media-1k .training .grasa .coment p{
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 1em black;
+  }
+  .training-media-1k .training .grasa{
+    background: url(../img/Ejercicios/Alimentos/Grasas.jpg) no-repeat center center/cover;
+  }
+  .training-media-1k .training .grasa .coment{
+    border: none;
+    background: none;
+  }
+}
